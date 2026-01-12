@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My 3D Portfolio</title>
+  <title> Welcome to My Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
@@ -15,14 +15,14 @@
     canvas {
       display: block;
     }
-    .hero {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      z-index: 10;
-    }
+   .hero {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
     h1 {
       font-size: 3rem;
     }
@@ -34,8 +34,8 @@
 <body>
 
 <div class="hero">
-  <h1>Your Name</h1>
-  <p>Creative Developer | 3D Portfolio</p>
+  <h1>P R A V E E N</h1>
+  <p>FULL STACK DEVELOPER | COMPUTER HARDWARE ENGINNER | FLUTTER DEVELOPER</p>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
@@ -69,9 +69,15 @@
   scene.add(mesh);
 
   // Light
-  const light = new THREE.PointLight(0xffffff, 1);
-  light.position.set(5, 5, 5);
-  scene.add(light);
+const light = new THREE.PointLight(0x00ffff, 1.5);
+light.position.set(3, 3, 3);
+scene.add(light);
+
+const ambientLight = new THREE.AmbientLight(0x222222);
+scene.add(ambientLight);
+
+
+  
 
   const ambientLight = new THREE.AmbientLight(0x404040);
   scene.add(ambientLight);
